@@ -1,203 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Axistruct Laboratory and Consulting Pvt. Ltd.</title>
 
-<link rel="stylesheet" href="css/style.css">
+<title>Axistruct Laboratory and Consulting Pvt Ltd</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f8;
+color:#333;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b3c5d;
+padding:15px 8%;
+color:white;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url("images/lab.jpg");
+
+background-size:cover;
+background-position:center;
+
+height:90vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#ff9800;
+padding:12px 20px;
+color:white;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 10%;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.service{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* EQUIPMENT */
+
+.equipment{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+/* CERTIFICATES */
+
+.certificates img{
+width:280px;
+margin:10px;
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* CONTACT FORM */
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input,textarea{
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+background:#0b3c5d;
+color:white;
+border:none;
+padding:12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* MAP */
+
+iframe{
+border-radius:8px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0b3c5d;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* FLOAT BUTTONS */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.callbtn{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#ff9800;
+padding:15px;
+border-radius:50%;
+color:white;
+text-decoration:none;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header>
+<nav>
+
+<div><b>AXISTRUCT LAB</b></div>
+
+<div>
+
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#equipment">Equipment</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<div class="hero">
 
 <h1>AXISTRUCT LABORATORY AND CONSULTING PRIVATE LIMITED</h1>
 
-<p>NABL Accredited Testing Laboratory | ISO/IEC 17025:2017</p>
+<p>NABL Accredited Civil Materials Testing Laboratory</p>
 
-</header>
+<a href="#contact" class="btn">Contact Us</a>
 
+</div>
 
-<section>
+<section id="about">
 
 <h2>About Us</h2>
 
 <p>
 
-Our laboratory is a civil materials testing facility dedicated to providing accurate and reliable testing services for construction materials. The laboratory is equipped with modern testing equipment and experienced technical staff to perform tests in accordance with relevant Indian Standards.
-
-We support engineers, contractors, government departments, and construction companies in maintaining quality control of materials used in infrastructure and building projects.
+Our laboratory provides reliable and accurate testing services for civil engineering construction materials including soil, cement, aggregates, concrete and bitumen.
 
 </p>
 
 </section>
 
+<section id="services">
 
-<section>
+<h2>Testing Services</h2>
 
-<h2>Vision</h2>
+<div class="services">
 
-<p>
+<div class="service">Soil Testing</div>
+<div class="service">Concrete Testing</div>
+<div class="service">Cement Testing</div>
+<div class="service">Aggregate Testing</div>
+<div class="service">Bitumen Testing</div>
+<div class="service">Field Testing</div>
 
-To become a trusted and leading civil materials testing laboratory by providing accurate, reliable, and timely testing services that support quality construction and infrastructure development.
-
-</p>
-
-</section>
-
-
-<section>
-
-<h2>Mission</h2>
-
-<ul>
-
-<li>Provide precise testing as per Indian Standards</li>
-<li>Maintain quality, accuracy and integrity</li>
-<li>Support engineers and contractors</li>
-<li>Improve laboratory equipment and expertise</li>
-<li>Deliver timely reports</li>
-
-</ul>
+</div>
 
 </section>
 
-
-<section>
-
-<h2>Laboratory Facility</h2>
-
-<p>
-
-Our laboratory is equipped with modern and calibrated testing equipment required for civil materials testing. The facility is designed to maintain proper testing conditions and ensure accurate results for all types of construction material tests.
-
-</p>
-
-</section>
-
-
-<section>
-
-<h2>Scope of Testing</h2>
-
-<p>
-
-Our laboratory provides reliable and accurate testing services for civil engineering construction materials used in buildings, roads, bridges, and other infrastructure projects.
-
-</p>
-
-<ul>
-
-<li>Soil Testing</li>
-<li>Cement Testing</li>
-<li>Aggregate Testing</li>
-<li>Concrete Testing</li>
-<li>Bitumen Testing</li>
-
-</ul>
-
-</section>
-
-
-<section>
-
-<h2>Why Choose Us</h2>
-
-<ul>
-
-<li>Accurate and reliable testing results</li>
-<li>Experienced technical staff</li>
-<li>Modern laboratory equipment</li>
-<li>Timely delivery of test reports</li>
-<li>Compliance with relevant Indian Standards</li>
-<li>Professional and transparent services</li>
-
-</ul>
-
-</section>
-
-
-<section>
+<section id="equipment">
 
 <h2>Laboratory Equipment</h2>
 
-<ul>
+<div class="equipment">
 
-<li>Compression Testing Machine</li>
-<li>Los Angeles Abrasion Machine</li>
-<li>CBR Apparatus</li>
-<li>Direct Shear Apparatus</li>
-<li>Sieve Shaker</li>
-<li>Hot Air Oven</li>
+<div class="card">
+<img src="images/Compression Testing Machine.jpeg">
+<p>Compression Testing Machine</p>
+</div>
 
-</ul>
+<div class="card">
+<img src="images/Los Angeles.jpeg">
+<p>Los Angeles Abrasion Machine</p>
+</div>
+
+<div class="card">
+<img src="images/CBR.jpeg">
+<p>CBR Apparatus</p>
+</div>
+
+<div class="card">
+<img src="images/Direct Shear Apparatus.jpeg">
+<p>Direct Shear Apparatus</p>
+</div>
+
+</div>
 
 </section>
 
+<section id="certificates">
+
+<h2>NABL Accreditation</h2>
+
+<img src="certificates/NABL Certificate.jpg">
+<img src="certificates/ISO Certificate.jpg">
+
+<br><br>
+
+<a href="certificates/NABL Scope.pdf" class="btn">Download NABL Scope</a>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 7880181531 / 7880181532</p>
+
+<p>📧 qmaxistructbpl@gmail.com</p>
+
+<p>📍 B-138 New Minal Residency, JK Road, Bhopal</p>
+
+<form>
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<textarea rows="4" placeholder="Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</section>
 
 <section>
 
-<h2>Certificates</h2>
+<h2>Location</h2>
 
-<p>
-
-NABL Accredited Laboratory – ISO/IEC 17025:2017
-
-</p>
-
-<p>
-
-ISO 9001:2015 Certified
-
-</p>
+<iframe
+src="https://www.google.com/maps?q=B-138%20New%20Minal%20Residency%20JK%20Road%20Bhopal&output=embed"
+width="100%"
+height="400">
+</iframe>
 
 </section>
-
-
-<section>
-
-<h2>Contact</h2>
-
-<p>
-
-Phone: 7880181531 / 7880181532
-
-</p>
-
-<p>
-
-Email: qmaxistructbpl@gmail.com
-
-</p>
-
-<p>
-
-Address: B-138 New Minal Residency, J.K Road, Subhash Nagar, Bhopal
-
-</p>
-
-</section>
-
 
 <footer>
 
-<p>
-
-© Axistruct Laboratory and Consulting Pvt. Ltd.
-
-</p>
+<p>© Axistruct Laboratory and Consulting Pvt Ltd</p>
 
 </footer>
 
+<a href="https://wa.me/917880181531" class="whatsapp">WhatsApp</a>
 
-<a href="https://wa.me/917880181531" class="whatsapp">
-
-Contact on WhatsApp
-
-</a>
-
+<a href="tel:7880181531" class="callbtn">Call</a>
 
 </body>
 </html>
